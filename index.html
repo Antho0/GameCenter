@@ -8,14 +8,14 @@
 	<title>Game Center</title>
 </head>
 <body>
-	<div class="container-liquid background">
+	<div class="container-liquid">
 		<div id="pageTitle" class="VOIR">
 			<h1>Game Center</h1>
 		</div>
 		<div id="shoppingCartCount" class="VOIR">
 			<p>Panier [prix total] [Nombre de jeux]</p>
 		</div>
-		<div id="showcase" class="VOIR">
+		<div id="showcase" class="VOIR background">
 			<div class="col-xs-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 VOIR">
 				<div class="row">
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -120,10 +120,26 @@
 		<div id="shoppingCart">
 			Liste du panier
 		</div>
-		<div id="form">
-			Formulaire
+		<div id="form" class="hide">
+			<form>
+				<div class="row">
+					<div class="col-xs-12 col-md-6"><label for="pseudo">Pseudonyme : </label><input type="text" name="pseudo" id="pseudo" placeholder="Pseudonyme"></div>
+					<div class="col-xs-12 col-md-6"><label for="name">Nom : </label><input type="text" name="name" id="name" placeholder="Nom"></div>
+					<div class="col-xs-12 col-md-6"><label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" placeholder="Prénom"></div>
+					<div class="col-xs-12 col-md-6"><label for="mail">Adresse mail : </label><input type="text" name="mail" id="mail" placeholder="exemple@gmail.com"></div>
+					<div class="col-xs-12 col-md-6"><label for="confirmMail">Confirmez l'adresse mail : </label><input type="text" name="confirmMail" id="confirmMail" placeholder="exemple@gmail.com"></div>
+					<div class="col-xs-12 col-md-6"><label for="password">Mot de passe : </label><input type="text" name="password" id="password" placeholder="Mot de passe"></div>
+					<div class="col-xs-12 col-md-6"><label for="confirmPassword">Confirmez le mot de passe : </label><input type="text" name="confirmPassword" id="confirmPassword" placeholder="Mot de passe"></div>
+					<div class="col-xs-12 col-md-6"><label for="address">Adresse : </label><input type="text" name="address" id="address" placeholder="1, rue de l'Avenue"></div>
+					<div class="col-xs-12 col-md-6"><label for="city">Ville : </label><input type="text" name="city" id="city" placeholder="Ville"></div>
+					<div class="col-xs-12 col-md-6"><label for="postalCode">Code postal : </label><input type="text" name="postalCode" id="postalCode" placeholder="12345"></div>
+					<div class="col-xs-12 col-md-6"><label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" placeholder="Prénom"></div>
+					<div class="col-xs-12 col-md-6"><label for="birthDate">Date de naissance : </label><input type="text" name="birthDate" id="birthDate" placeholder="01/01/2001"></div>
+					<button id="registrationForm" class="button">Valider l'inscription et confirmez l'achat</button>
+				</div>
+			</form>
 		</div>
 	</div>
-	<script src="assets/js/gameCenter.js" =></script>
+	<script src="assets/js/gameCenter.js"></script>
 </body>
 </html>
