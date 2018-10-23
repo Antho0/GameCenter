@@ -30,7 +30,7 @@
 						<img src="assets/img/aWayOut.jpg" alt="A Way Out" class="imgSize">
 						<div class="row">
 							<button type="button" id="aWayOutButton" class="button col-6">Acheter</button>
-							<div class="price col-6">44€99</div>
+							<div id="aWayOutPrice" class="price col-6">44€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -38,7 +38,7 @@
 						<img src="assets/img/DeusEx.jpeg" alt="Deus Ex" class="imgSize">
 						<div class="row">
 							<button type="button" id="deusExButton" class="button col-6">Acheter</button>
-							<div class="price col-6">14€99</div>
+							<div id="deusExPrice" class="price col-6">14€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -46,7 +46,7 @@
 						<img src="assets/img/FarCry5_2.jpg" alt="FarCry 5" class="imgSize">
 						<div class="row">
 							<button type="button" id="farCry5Button" class="button col-6">Acheter</button>
-							<div class="price col-6">54€99</div>
+							<div id="farCry5Price" class="price col-6">54€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -54,7 +54,7 @@
 						<img src="assets/img/FF.jpeg" alt="Final Fantasy XV" class="imgSize">
 						<div class="row">
 							<button type="button" id="finalFantasyButton" class="button col-6">Acheter</button>
-							<div class="price col-6">49€99</div>
+							<div id="finalFantasyPrice" class="price col-6">49€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -62,7 +62,7 @@
 						<img src="assets/img/Friday13.jpg" alt="Friday the 13th" class="imgSize">
 						<div class="row">
 							<button type="button" id="friday13Button" class="button col-6">Acheter</button>
-							<div class="price col-6">24€99</div>
+							<div id="friday13Price" class="price col-6">24€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -70,7 +70,7 @@
 						<img src="assets/img/GodofWar.jpg" alt="God Of War" class="imgSize">
 						<div class="row">
 							<button type="button" id="godOfWarButton" class="button col-6">Acheter</button>
-							<div class="price col-6">54€99</div>
+							<div id="godOfWarPrice" class="price col-6">54€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -78,7 +78,7 @@
 						<img src="assets/img/PES.jpg" alt="PES 2018" class="imgSize">
 						<div class="row">
 							<button type="button" id="pes2018Button" class="button col-6">Acheter</button>
-							<div class="price col-6">2€99</div>
+							<div id="pes2018Price" class="price col-6">2€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -86,7 +86,7 @@
 						<img src="assets/img/SpiderMan.jpeg" alt="Spider-Man" class="imgSize">
 						<div class="row">
 							<button type="button" id="spiderManButton" class="button col-6">Acheter</button>
-							<div class="price col-6">149€99</div>
+							<div d="spiderManPrice" class="price col-6">149€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -94,7 +94,7 @@
 						<img src="assets/img/TheLastOfUs.jpg" alt="The Last Of Us" class="imgSize">
 						<div class="row">
 							<button type="button" id="theLastOfUsButton" class="button col-6">Acheter</button>
-							<div class="price col-6">19€99</div>
+							<div id="theLastOfUsPrice" class="price col-6">19€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -102,7 +102,7 @@
 						<img src="assets/img/TombRaider_2.jpg" alt="Shadow of the Tomb Raider" class="imgSize">
 						<div class="row">
 							<button type="button" id="shadowOfTheTombRaiderButton" class="button col-6">Acheter</button>
-							<div class="price col-6">49€99</div>
+							<div d="shadowOfTheTombRaiderPrice" class="price col-6">49€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -110,7 +110,7 @@
 						<img src="assets/img/Dishonored2.jpg" alt="Dishonored" class="imgSize">
 						<div class="row">
 							<button type="button" id="dishonoredButton" class="button col-6">Acheter</button>
-							<div class="price col-6">11€99</div>
+							<div id="dishonoredPrice" class="price col-6">11€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
@@ -118,7 +118,7 @@
 						<img src="assets/img/FootballManager.jpg" alt="Football Manager 2018" class="imgSize">
 						<div class="row">
 							<button type="button" id="footballManagerButton" class="button col-6">Acheter</button>
-							<div class="price col-6">29€99</div>
+							<div id="footballManagerPrice" class="price col-6">29€99</div>
 						</div>
 					</div>
 				</div>
@@ -134,18 +134,75 @@
 		<div id="form" class="hide VOIR">
 			<form>
 				<div class="row">
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="pseudo">Pseudonyme : </label><input type="text" name="pseudo" id="pseudo" placeholder="Pseudonyme" class="inputForm"></div>
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="name">Nom : </label><input type="text" name="name" id="name" placeholder="Nom" class="inputForm"></div>
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" placeholder="Prénom" class="inputForm"></div>
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="mail">Adresse mail : </label><input type="text" name="mail" id="mail" placeholder="exemple@gmail.com" class="inputForm"></div>
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="confirmMail">Confirmez l'adresse mail : </label><input type="text" name="confirmMail" id="confirmMail" placeholder="exemple@gmail.com" class="inputForm"></div>
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="password">Mot de passe : </label><input type="text" name="password" id="password" placeholder="Mot de passe" class="inputForm"></div>
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="confirmPassword">Confirmez le mot de passe : </label><input type="text" name="confirmPassword" id="confirmPassword" placeholder="Mot de passe" class="inputForm"></div>
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="address">Adresse : </label><input type="text" name="address" id="address" placeholder="1, rue de l'Avenue" class="inputForm"></div>
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="city">Ville : </label><input type="text" name="city" id="city" placeholder="Ville" class="inputForm"></div>
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="postalCode">Code postal : </label><input type="text" name="postalCode" id="postalCode" placeholder="12345" class="inputForm"></div>
-					<div class="col-xs-12 col-md-6 col-lg-4"><label for="birthDate">Date de naissance : </label><input type="text" name="birthDate" id="birthDate" placeholder="01/01/2001" class="inputForm"></div>
-					<button type="button" id="registrationForm" class="button">Valider l'inscription et confirmez l'achat</button>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="pseudo">Pseudonyme : </label>
+							<input type="text" name="pseudo" id="pseudo" placeholder="Pseudonyme" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="name">Nom : </label>
+							<input type="text" name="name" id="name" placeholder="Nom" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="firstName">Prénom : </label>
+							<input type="text" name="firstName" id="firstName" placeholder="Prénom" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="mail">Adresse mail : </label>
+							<input type="text" name="mail" id="mail" placeholder="exemple@gmail.com" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="confirmMail">Confirmez l'adresse mail : </label>
+							<input type="text" name="confirmMail" id="confirmMail" placeholder="exemple@gmail.com" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="password">Mot de passe : </label>
+							<input type="password" name="password" id="password" placeholder="Mot de passe" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="confirmPassword">Confirmez le mot de passe : </label>
+							<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Mot de passe" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="address">Adresse : </label>
+							<input type="text" name="address" id="address" placeholder="1, rue de l'Avenue" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="city">Ville : </label>
+							<input type="text" name="city" id="city" placeholder="Ville" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="postalCode">Code postal : </label>
+							<input type="text" name="postalCode" id="postalCode" placeholder="12345" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<div class="row">
+							<label class="labelForm" for="birthDate">Date de naissance : </label>
+							<input type="text" name="birthDate" id="birthDate" placeholder="01/01/2001" class="inputForm">
+						</div>
+					</div>
+					<div class="VOIR col-xs-12 col-md-6 col-lg-4">
+						<button type="button" id="registrationForm" class="button">Valider l'inscription et confirmez l'achat</button>
+					</div>
 				</div>
 			</form>
 		</div>

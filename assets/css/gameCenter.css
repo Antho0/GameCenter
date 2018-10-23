@@ -62,10 +62,16 @@ body {
 }
 /*Formulaire*/
 .inputForm {
-	margin-right: 0px;
-
+	width: 55%;
+	margin-bottom: 5px;
 }
-
+.labelForm {
+	width: 40%;
+}
+#registrationForm {
+	width: 95%;
+	height: 100%;
+}
 .VOIR {
 	border: 2px solid #CCC;
 }
