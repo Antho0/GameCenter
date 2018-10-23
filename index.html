@@ -10,132 +10,142 @@
 <body>
 	<div class="container-liquid">
 		<div id="pageTitle" class="VOIR">
-			<h1>Game Center</h1>
+			<h1>GAME CENTER</h1>
 		</div>
 		<div id="shoppingCartCount" class="VOIR">
-			<p>Votre panier : <span id="articleNumber">[Nombre de jeux]</span> articles pour un total de <span id="totalPrice">[prix total]</span>€</p>
+			<div class="row">
+				<div>Votre panier : <span id="articleNumber">[Nombre de jeux]</span> articles pour un total de <span id="totalPrice">[prix total]</span>€</div>
+				<button type="button" id="shoppingCartButton" class="button">Valider le panier</button>
+			</div>
 		</div>
 		<div id="showcase" class="VOIR">
-			<div class="col-xs-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 VOIR">
+			<div class="row">
+			<div id="background-left" class="background d-none d-md-block col-md-1 col-lg-2 VOIR">
+				<img src="assets/img/background_left.jpg" class="img-fluid background">
+			</div>
+			<div class="col-xs-12 col-md-10 col-lg-8 VOIR">
 				<div class="row">
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
 						<div class="gameTitle">A Way Out</div>
-						<img src="assets/img/aWayOut.jpg" class="imgSize">
+						<img src="assets/img/aWayOut.jpg" alt="A Way Out" class="imgSize">
 						<div class="row">
-							<button class="button col-6">Acheter</button>
+							<button type="button" id="aWayOutButton" class="button col-6">Acheter</button>
 							<div class="price col-6">44€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
 						<div class="gameTitle">Deus Ex</div>
-						<img src="assets/img/DeusEx.jpeg" class="imgSize">
+						<img src="assets/img/DeusEx.jpeg" alt="Deus Ex" class="imgSize">
 						<div class="row">
-							<button class="button col-6">Acheter</button>
+							<button type="button" id="deusExButton" class="button col-6">Acheter</button>
 							<div class="price col-6">14€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
-						<div class="gameTitle">Dishonored</div>
-						<img src="assets/img/Dishonored.jpg" class="imgSize">
-						<div class="row">
-							<button class="button col-6">Acheter</button>
-							<div class="price col-6">11€99</div>
-						</div>
-					</div>
-					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
 						<div class="gameTitle">FarCry 5</div>
-						<img src="assets/img/FarCry5.jpg" class="imgSize">
+						<img src="assets/img/FarCry5_2.jpg" alt="FarCry 5" class="imgSize">
 						<div class="row">
-							<button class="button col-6">Acheter</button>
+							<button type="button" id="farCry5Button" class="button col-6">Acheter</button>
 							<div class="price col-6">54€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
 						<div class="gameTitle">Final Fantasy XV</div>
-						<img src="assets/img/FF.jpeg" class="imgSize">
+						<img src="assets/img/FF.jpeg" alt="Final Fantasy XV" class="imgSize">
 						<div class="row">
-							<button class="button col-6">Acheter</button>
+							<button type="button" id="finalFantasyButton" class="button col-6">Acheter</button>
 							<div class="price col-6">49€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
-						<div class="gameTitle">Football Manager 2018</div>
-						<img src="assets/img/FootballManager.jpg" class="imgSize">
-						<div class="row">
-							<button class="button col-6">Acheter</button>
-							<div class="price col-6">29€99</div>
-						</div>
-					</div>
-					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
 						<div class="gameTitle">Friday the 13th</div>
-						<img src="assets/img/Friday13.jpg" class="imgSize">
+						<img src="assets/img/Friday13.jpg" alt="Friday the 13th" class="imgSize">
 						<div class="row">
-							<button class="button col-6">Acheter</button>
+							<button type="button" id="friday13Button" class="button col-6">Acheter</button>
 							<div class="price col-6">24€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
 						<div class="gameTitle">God Of War</div>
-						<img src="assets/img/GodofWar.jpg" class="imgSize">
+						<img src="assets/img/GodofWar.jpg" alt="God Of War" class="imgSize">
 						<div class="row">
-							<button class="button col-6">Acheter</button>
+							<button type="button" id="godOfWarButton" class="button col-6">Acheter</button>
 							<div class="price col-6">54€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
 						<div class="gameTitle">PES 2018</div>
-						<img src="assets/img/PES.jpg" class="imgSize">
+						<img src="assets/img/PES.jpg" alt="PES 2018" class="imgSize">
 						<div class="row">
-							<button class="button col-6">Acheter</button>
+							<button type="button" id="pes2018Button" class="button col-6">Acheter</button>
 							<div class="price col-6">2€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
 						<div class="gameTitle">Spider-Man</div>
-						<img src="assets/img/SpiderMan.jpeg" class="imgSize">
+						<img src="assets/img/SpiderMan.jpeg" alt="Spider-Man" class="imgSize">
 						<div class="row">
-							<button class="button col-6">Acheter</button>
+							<button type="button" id="spiderManButton" class="button col-6">Acheter</button>
 							<div class="price col-6">149€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
 						<div class="gameTitle">The Last Of Us</div>
-						<img src="assets/img/TheLastOfUs.jpg" class="imgSize">
+						<img src="assets/img/TheLastOfUs.jpg" alt="The Last Of Us" class="imgSize">
 						<div class="row">
-							<button class="button col-6">Acheter</button>
+							<button type="button" id="theLastOfUsButton" class="button col-6">Acheter</button>
 							<div class="price col-6">19€99</div>
 						</div>
 					</div>
 					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
 						<div class="gameTitle">Shadow of the Tomb Raider</div>
-						<img src="assets/img/TombRaider.jpg" class="imgSize">
+						<img src="assets/img/TombRaider_2.jpg" alt="Shadow of the Tomb Raider" class="imgSize">
 						<div class="row">
-							<button class="button col-6">Acheter</button>
+							<button type="button" id="shadowOfTheTombRaiderButton" class="button col-6">Acheter</button>
 							<div class="price col-6">49€99</div>
+						</div>
+					</div>
+					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
+						<div class="gameTitle">Dishonored</div>
+						<img src="assets/img/Dishonored2.jpg" alt="Dishonored" class="imgSize">
+						<div class="row">
+							<button type="button" id="dishonoredButton" class="button col-6">Acheter</button>
+							<div class="price col-6">11€99</div>
+						</div>
+					</div>
+					<div class="game col-xs-12 col-md-6 col-lg-4 VOIR">
+						<div class="gameTitle">Football Manager 2018</div>
+						<img src="assets/img/FootballManager.jpg" alt="Football Manager 2018" class="imgSize">
+						<div class="row">
+							<button type="button" id="footballManagerButton" class="button col-6">Acheter</button>
+							<div class="price col-6">29€99</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div id="background-right" class="background d-none d-md-block col-md-1 col-lg-2 VOIR">
+				<img src="assets/img/background_right.jpg" class="img-fluid background">
+			</div>
+			</div>
 		</div>
-		<div id="shoppingCart" class="hide">
-			Liste du panier
+		<div id="shoppingCart" class="hide VOIR">
+			Liste du panier fenêtre "Modal"
 		</div>
-		<div id="form" class="hide">
+		<div id="form" class="hide VOIR">
 			<form>
 				<div class="row">
-					<div class="col-xs-12 col-md-6"><label for="pseudo">Pseudonyme : </label><input type="text" name="pseudo" id="pseudo" placeholder="Pseudonyme"></div>
-					<div class="col-xs-12 col-md-6"><label for="name">Nom : </label><input type="text" name="name" id="name" placeholder="Nom"></div>
-					<div class="col-xs-12 col-md-6"><label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" placeholder="Prénom"></div>
-					<div class="col-xs-12 col-md-6"><label for="mail">Adresse mail : </label><input type="text" name="mail" id="mail" placeholder="exemple@gmail.com"></div>
-					<div class="col-xs-12 col-md-6"><label for="confirmMail">Confirmez l'adresse mail : </label><input type="text" name="confirmMail" id="confirmMail" placeholder="exemple@gmail.com"></div>
-					<div class="col-xs-12 col-md-6"><label for="password">Mot de passe : </label><input type="text" name="password" id="password" placeholder="Mot de passe"></div>
-					<div class="col-xs-12 col-md-6"><label for="confirmPassword">Confirmez le mot de passe : </label><input type="text" name="confirmPassword" id="confirmPassword" placeholder="Mot de passe"></div>
-					<div class="col-xs-12 col-md-6"><label for="address">Adresse : </label><input type="text" name="address" id="address" placeholder="1, rue de l'Avenue"></div>
-					<div class="col-xs-12 col-md-6"><label for="city">Ville : </label><input type="text" name="city" id="city" placeholder="Ville"></div>
-					<div class="col-xs-12 col-md-6"><label for="postalCode">Code postal : </label><input type="text" name="postalCode" id="postalCode" placeholder="12345"></div>
-					<div class="col-xs-12 col-md-6"><label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" placeholder="Prénom"></div>
-					<div class="col-xs-12 col-md-6"><label for="birthDate">Date de naissance : </label><input type="text" name="birthDate" id="birthDate" placeholder="01/01/2001"></div>
-					<button id="registrationForm" class="button">Valider l'inscription et confirmez l'achat</button>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="pseudo">Pseudonyme : </label><input type="text" name="pseudo" id="pseudo" placeholder="Pseudonyme" class="inputForm"></div>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="name">Nom : </label><input type="text" name="name" id="name" placeholder="Nom" class="inputForm"></div>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" placeholder="Prénom" class="inputForm"></div>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="mail">Adresse mail : </label><input type="text" name="mail" id="mail" placeholder="exemple@gmail.com" class="inputForm"></div>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="confirmMail">Confirmez l'adresse mail : </label><input type="text" name="confirmMail" id="confirmMail" placeholder="exemple@gmail.com" class="inputForm"></div>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="password">Mot de passe : </label><input type="text" name="password" id="password" placeholder="Mot de passe" class="inputForm"></div>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="confirmPassword">Confirmez le mot de passe : </label><input type="text" name="confirmPassword" id="confirmPassword" placeholder="Mot de passe" class="inputForm"></div>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="address">Adresse : </label><input type="text" name="address" id="address" placeholder="1, rue de l'Avenue" class="inputForm"></div>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="city">Ville : </label><input type="text" name="city" id="city" placeholder="Ville" class="inputForm"></div>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="postalCode">Code postal : </label><input type="text" name="postalCode" id="postalCode" placeholder="12345" class="inputForm"></div>
+					<div class="col-xs-12 col-md-6 col-lg-4"><label for="birthDate">Date de naissance : </label><input type="text" name="birthDate" id="birthDate" placeholder="01/01/2001" class="inputForm"></div>
+					<button type="button" id="registrationForm" class="button">Valider l'inscription et confirmez l'achat</button>
 				</div>
 			</form>
 		</div>
