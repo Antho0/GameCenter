@@ -12,9 +12,9 @@
 		<div id="pageTitle" class="">
 			<h1>GAME CENTER</h1>
 		</div>
-		<div id="shoppingCartCount" class="container-fluid">
+		<div id="shoppingCartBar" class="container-fluid">
 			<div class="row">
-				<div class="col DROITE">Votre panier : <span id="articleNumber">0</span> article(s) pour un total de <span id="totalPrice">00.00</span>€</div>
+				<div class="col textAlignRight">Votre panier : <span id="articleNumber">0</span> article(s) pour un total de <span id="totalPrice">00.00</span>€</div>
 				<button type="button" id="shoppingCartButton" class="button">Valider le panier</button>
 			</div>
 		</div>
@@ -128,15 +128,15 @@
 			</div>
 			</div>
 		</div>
-		<div id="shoppingCart" class="container-fluid">
+		<div id="shoppingCart" class="hide container-fluid">
 			<div class="row">
-				<div id="articleList" class="VOIR col-9">
+				<div id="articleList" class="col-9">
 				</div>
-				<div id="priceList" class="VOIR col-3">
-					<div id="total" class="VOIR">Total</div>
+				<div id="priceList" class="col-3">
+					<div id="total">Total</div>
 				</div>
 			</div>
-			<div id="form" class="hide container-fluid">
+			<div id="form" class="container-fluid">
 				<form>
 					<div class="row">
 						<div class=" col-xs-12 col-md-6 col-lg-4">

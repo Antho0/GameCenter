@@ -12,9 +12,13 @@ body {
 	text-align: center;
 	background-color: #000;
 	font-family: 'Engravers';
+	border-bottom: 2px solid #D60;
 }
 #shoppingCartButton {
 	margin-left: 10px;
+}
+.textAlignRight {
+	text-align: right;
 }
 /*Vitrine*/
 .background {
@@ -32,10 +36,14 @@ body {
 }
 #showcase {
 	margin-top: 10px;
+	border-top: 2px solid #D60;
+	padding-top: 2px;
 }
 .imgSize {
 	width: 100%;
+	max-width: 400px;
 	max-height: 393px;
+	align-content: center;
 }
 .gameTitle {
 	font-weight: bold;
@@ -90,6 +98,7 @@ body {
 #registrationForm {
 	width: 95%;
 	height: 100%;
+	margin-bottom: 10px;
 }
 
 .VOIR {
