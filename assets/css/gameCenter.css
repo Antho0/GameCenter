@@ -1,0 +1,24 @@
+body {
+	background-color: #333;
+	color: #F80;
+}
+.background {
+	background-image: url(https://s3.gaming-cdn.com/images/products/2468/background/2468.jpg);
+}
+#showcase {
+	margin-top: 10px;
+}
+.imgSize {
+	width: 100%;
+}
+.gameTitle {
+	font-weight: bold;
+	text-align: center;
+}
+.price {
+	text-align: right;
+}
+
+.VOIR {
+	border: 2px solid #CCC;
+}
