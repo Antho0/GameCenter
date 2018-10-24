@@ -1,25 +1,78 @@
 $(function(){
   $('#shoppingCart').hide();
+  totalPrice = 0;
+  count = 1;
+  $('#farCry5Button').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 54.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#deusExButton').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 14.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#shadowOfTheTombRaiderButton').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 49.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#aWayOutButton').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 44.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#friday13Button').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 24.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#godOfWarButton').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 54.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#pes2018Button').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 12.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#spiderManButton').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 99.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#theLastOfUsButton').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 19.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#dishonoredButton').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 11.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#footballManagerButton').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 29.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
+  $('#finalFantasyButton').click(function(){
+    $('#articleNumber').html(count++);
+    totalPrice = Math.round((totalPrice + 49.99)*100)/100;
+    $('#totalPrice').html(totalPrice);
+  });
 
   $('#shoppingCartButton').click(function(){
     $('#shoppingCart').modal('show');
-    farCry5 = ('#farCry5Price').val();
-    aWayOut = ('#aWayOutPrice').val();
-    deusEx = ('#deusExPrice').val();
-    friday13 = ('#friday13Price').val();
-    godOfWar = ('#godOfWarPrice').val();
-    pes2018 = ('#pes2018Price').val();
-    spiderMan = ('#spiderManPrice').val();
-    theLastOfUs = ('#theLastOfUsPrice').val();
-    shadowOfTheTombRaider = ('#shadowOfTheTombRaiderPrice').val();
-    dishonored = ('#dishonoredPrice').val();
-    footballManager = ('#footballManagerPrice').val();
-    finalFantasy = ('#finalFantasyPrice').val();
+  });
+  $('#cancelForm').click(function(){
+    $('#shoppingCart').modal('hide');
   });
 
   $('#registrationForm').click(function(){
     pseudonyme = $('#pseudo').val();
-    Name = $('#name').val();
+    name = $('#name').val();
     firstName = $('#firstName').val();
     mail = $('#mail').val();
     confirmMail = $('#confirmMail').val();
@@ -35,7 +88,7 @@ $(function(){
     regexPass = /^[a-zA-Z0-9]{8,}$/;
     regexPost = /^[0-9]{5,}$/;
     regexBd = /^[0-3][0-9]\/[0-1][0-9]\/[1-2][09][0-9]{2}$/;
-    if (regexMail.test(mail) && regexName.test(Name) && regexAddress.test(address) && regexName.test(firstName) && regexName.test(pseudonyme) && regexPass.test(password) && password === confirmPassword && mail === confirmMail && regexPost.test(postalCode) && regexName.test(city) && regexBd.test(birthDate)){
+    if (regexMail.test(mail) && regexName.test(name) && regexAddress.test(address) && regexName.test(firstName) && regexName.test(pseudonyme) && regexPass.test(password) && password === confirmPassword && mail === confirmMail && regexPost.test(postalCode) && regexName.test(city) && regexBd.test(birthDate)){
       alert('Merci pour votre achat');
       $('#closeModalBtn').click(function(e) {
         e.preventDefault();
@@ -48,7 +101,7 @@ $(function(){
       } else {
         $('#mail').removeClass('RED');
       }
-      if (regexName.test(Name) == false) {
+      if (regexName.test(name) == false) {
         $('#name').addClass('RED');
       } else {
         $('#name').removeClass('RED');
