@@ -28,12 +28,12 @@ $('#registrationForm').click(function(){
 	City = $('#city').val();
 	PostalCode = $('#postalCode').val();
 	birthDate = $('#birthDate').val();
-	regexAdresse= /^\d{1,5}\s+[\sa-zA-Z\-]{1,}$/;
-	regexName= /^[a-zA-Z\-\séèÉë]{1,}$/;
-	regexMail= /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$/;
-	regexPass= /^(?=.?[A-Z])(?=.?[a-z])(?=.?[0-9])(?=.?[#?!@$%^&*-]).{8,}$/;
-	regexPost= /^[0-9]{5,}$/;
-	regexBd= /^[0-3][0-9]\/[0-1][0-9]\/[1-2][09][0-9]{2}$/;
+	regexAdresse = /^\d{1,5}\s+[\sa-zA-Z\-]{1,}$/;
+	regexName = /^[a-zA-Z\-\séèÉë]{1,}$/;
+	regexMail = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}$/;
+	regexPass = /^(?=.?[A-Z])(?=.?[a-z])(?=.?[0-9])(?=.?[#?!@$%^&*-]).{8,}$/;
+	regexPost = /^[0-9]{5,}$/;
+	regexBd = /^[0-3][0-9]\/[0-1][0-9]\/[1-2][09][0-9]{2}$/;
 	if (regexMail.test(mail) && regexName.test(Name) && regexAdresse.test(adresse) && regexName.test(FirstName) && regexName.test(pseudo) && regexPass.test(password) && password === confirmPassword && mail === confirmMail && regexPost.test(PostalCode) && regexName.test(City) && regexBd.test(birthDate)){
 		alert('Merci pour votre achat');
 		$('#closeModalBtn').click(function(e) {

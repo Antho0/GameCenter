@@ -57,7 +57,7 @@ body {
 	text-align: right;
 	font-weight: bold;
 	font-size: 1.2em;
-	margin-left: -2px;
+	margin-left: -13px;
 }
 .button {
 	border: 1px solid #FF0;
@@ -66,7 +66,7 @@ body {
 	border-radius: 5px;
 	font-weight: bold;
 	margin-bottom: 2px;
-	margin-left: 2px;
+	margin-left: 13px;
 }
 .buttonCheck {
 	border: 1px solid #DDD;
@@ -87,7 +87,7 @@ body {
 	background-color: #DDD;
 	border-radius: 5px;
 }
-/*Formulaire*/
+/*Fenêtre modale*/
 .inputForm {
 	width: 55%;
 	margin-bottom: 5px;
@@ -99,6 +99,15 @@ body {
 	width: 95%;
 	height: 100%;
 	margin-bottom: 10px;
+}
+.modal {
+	width: 93%;
+	background-color: #333;
+	border-radius: 30px;
+	height: 100%;
+}
+.close-modal {
+	display: none;
 }
 
 .VOIR {
