@@ -2,74 +2,102 @@ $(function(){
   $('#shoppingCart').hide();
   totalPrice = 0;
   count = 1;
+  shopCartEmpty = $('#shoppingCartBar').html ();
   $('#farCry5Button').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 54.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>Far Cry 5 - 54.99€</p>');
   });
   $('#deusExButton').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 14.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>Deus Ex - 14.99€</p>')
   });
   $('#shadowOfTheTombRaiderButton').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 49.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>Shadow Of The Tomb Raider - 49.99€</p>')
   });
   $('#aWayOutButton').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 44.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>A Way Out - 44.99€</p>')
   });
   $('#friday13Button').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 24.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>Friday The 13th - 24.99€</p>')
   });
   $('#godOfWarButton').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 54.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>God Of War - 54.99€</p>')
   });
   $('#pes2018Button').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 12.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>PES 2018 - 12.99€</p>')
   });
   $('#spiderManButton').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 99.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>Spider-Man - 99.99€</p>')
   });
   $('#theLastOfUsButton').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 19.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>The Last Of Us - 19.99€</p>')
   });
   $('#dishonoredButton').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 11.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>Dishonored - 11.99€</p>')
   });
   $('#footballManagerButton').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 29.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>Football Manager 2018 - 29.99€</p>')
   });
   $('#finalFantasyButton').click(function(){
     $('#articleNumber').html(count++);
     totalPrice = Math.round((totalPrice + 49.99)*100)/100;
     $('#totalPrice').html(totalPrice);
+    $('#total').html(totalPrice);
+    $('#articleList').append('<p>Final Fantasy XV - 49.99€</p>')
   });
-
   $('#shoppingCartButton').click(function(){
-    $('#shoppingCart').modal('show');
+    if (totalPrice === 0) {
+      alert('Votre panier est vide');
+    } else {
+      $('#shoppingCart').modal('show');
+    }
   });
   $('#cancelForm').click(function(){
-    $('#shoppingCart').modal('hide');
+    $('#shoppingCart').hide('modal');
+    $('body').removeAttr('style');
   });
-
   $('#registrationForm').click(function(){
     pseudonyme = $('#pseudo').val();
     name = $('#name').val();
@@ -90,10 +118,9 @@ $(function(){
     regexBd = /^[0-3][0-9]\/[0-1][0-9]\/[1-2][09][0-9]{2}$/;
     if (regexMail.test(mail) && regexName.test(name) && regexAddress.test(address) && regexName.test(firstName) && regexName.test(pseudonyme) && regexPass.test(password) && password === confirmPassword && mail === confirmMail && regexPost.test(postalCode) && regexName.test(city) && regexBd.test(birthDate)){
       alert('Merci pour votre achat');
-      $('#closeModalBtn').click(function(e) {
-        e.preventDefault();
-        $('#shoppingCart').modal('hide');
-      });
+      $('#shoppingCart').hide('modal');
+      $('body').removeAttr('style');
+      $('#shoppingCartBar').html(shopCartEmpty);
     } else {
       alert('Veuillez remplir correctement le formulaire.');
       if (regexMail.test(mail) == false) {
